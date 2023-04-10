@@ -1,0 +1,491 @@
+.container {
+  height: auto;
+}
+.particles {
+  backdrop-filter: blur(0px);
+  min-height: 90vh;
+  height: auto;
+}
+.header {
+  backdrop-filter: blur(0px);
+  height: 50vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.headerContent {
+  display: flex;
+  flex-direction: column;
+}
+.logoAC {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 3.6em;
+  margin: 0px;
+  font-weight: 100;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+.name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: 4em;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    sans-serif;
+}
+.subTitle {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: rgb(255, 255, 255);
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    sans-serif;
+}
+.containAbout {
+  display: flex;
+  justify-content: center;
+}
+.about {
+  border-radius: 8px;
+  box-shadow: rgba(42, 42, 42, 0.367) 2px 2px 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.914);
+  color: #000;
+  font-size: 20px;
+  width: 800px;
+  line-height: 1.5em;
+  height: auto;
+  backdrop-filter: blur(0px);
+  font-family: Open Sans, sans-serif;
+}
+.body {
+  padding-bottom: 50px;
+  background: #212529;
+  height: auto;
+  flex-direction: column;
+}
+.ButtonProyects {
+  margin-top: 100px;
+  margin-left: 10vw;
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+.containProyect {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+  border: 1px solid white;
+  width: 90vw;
+  min-height: 400px;
+}
+
+.containProyectName {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nameProyect {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: Rubik, sans-serif;
+}
+.containTecnology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+.tecnology {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Rubik, sans-serif;
+  color: #fff;
+  background: rgb(63, 63, 81);
+  height: 44px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containProyectDetail {
+  text-align: center;
+}
+.proyectDetail {
+  display: flex;
+
+  margin: 0px;
+
+  font-size: 20px;
+  color: rgb(116, 116, 134);
+}
+.containButtons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Rubik, sans-serif;
+}
+.Button:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.containIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.icon {
+  border-radius: 100%;
+  padding: 20px;
+  background: #3f3f51;
+  height: 130px;
+  width: 130px;
+}
+.iconName {
+  font-size: 16px;
+  color: #fff;
+  background: #000;
+  font-family: Rubik, sans-serif;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+.containContact {
+  margin: 20px auto;
+  border: 1px solid white;
+  width: 90vw;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containQr {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.image {
+  height: 250px;
+}
+.containSpans {
+  display: flex;
+
+  flex-direction: row;
+  width: 60%;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+}
+
+.containLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+}
+.labelContact {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: Open Sans, sans-serif;
+}
+.spanContact {
+  display: flex;
+  flex-direction: column;
+  font-size: 19px;
+  font-weight: 600;
+  font-family: Open Sans, sans-serif;
+}
+.containIconsLinks {
+  padding: 10px;
+  padding-left: 0px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+a {
+  color: black;
+}
+.iconLink {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logoAC {
+    height: 200px;
+    width: 200px;
+  }
+  .title {
+    font-size: 2.7em;
+  }
+
+  .name {
+    font-size: 3em;
+  }
+  .subTitle {
+    font-size: 1.6em;
+    margin: 0px;
+  }
+  .containAbout {
+    display: flex;
+    justify-content: center;
+  }
+  .about {
+    box-shadow: rgba(42, 42, 42, 0.367) 2px 2px 20px;
+    padding: 10px;
+    font-size: 17px;
+    width: 670px;
+    line-height: 1.5em;
+  }
+  .ButtonProyects {
+    font-size: 25px;
+  }
+
+  .nameProyect {
+    font-size: 30px;
+  }
+  .containTecnology {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+  }
+  .tecnology {
+    font-size: 14px;
+    height: 44px;
+    width: 180px;
+  }
+
+  .proyectDetail {
+    font-size: 18px;
+  }
+  .Button {
+    font-size: 16px;
+  }
+  .containIcon {
+    gap: 5px;
+  }
+  .icon {
+    padding: 15px;
+    height: 100px;
+    width: 100px;
+  }
+  .iconName {
+    font-size: 15px;
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+  .image {
+    height: 220px;
+  }
+  .containSpans {
+    width: 90%;
+
+    padding: 30px;
+  }
+
+  .containLabels {
+    gap: 5px;
+    width: 50%;
+  }
+  .labelContact {
+    font-size: 17px;
+  }
+  .spanContact {
+    font-size: 18px;
+  }
+  .iconLink {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .particles {
+    backdrop-filter: blur(0px);
+    height: auto;
+  }
+  .logoAC {
+    height: 180px;
+    width: 180px;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+
+  .name {
+    font-size: 2.7em;
+  }
+  .subTitle {
+    font-size: 1.3em;
+    margin: 0px;
+  }
+  .about {
+    box-shadow: rgba(42, 42, 42, 0.367) 2px 2px 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80vw;
+    line-height: 1.5em;
+  }
+  .ButtonProyects {
+    font-size: 23px;
+  }
+
+  .nameProyect {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .containProyect {
+    padding: 3px;
+  }
+  .containTecnology {
+    gap: 15px;
+    padding: 0px;
+  }
+  .tecnology {
+    font-size: 13px;
+    height: 44px;
+    width: 170px;
+  }
+
+  .proyectDetail {
+    margin: 13px;
+    font-size: 16px;
+  }
+  .containButtons {
+    margin-bottom: 20px;
+  }
+  .Button {
+    font-size: 15px;
+  }
+  .containIcon {
+    gap: 5px;
+  }
+  .icon {
+    padding: 10px;
+    height: 90px;
+    width: 90px;
+  }
+  .iconName {
+    font-size: 15px;
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+
+  .image {
+    height: 150px;
+  }
+  .containQr {
+    width: 100%;
+  }
+  .containSpans {
+    width: 90%;
+    flex-direction: column;
+    padding: 5px;
+    gap: 15px;
+  }
+
+  .containLabels {
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+  }
+  .labelContact {
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+  }
+  .spanContact {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+  }
+  .iconLink {
+    font-size: 33px;
+  }
+  .containIconsLinks {
+    padding: 0px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .about {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(42, 42, 42, 0.367) 2px 2px 20px;
+    padding: 5px;
+    font-size: 16px;
+    width: 80vw;
+    line-height: 1.5em;
+  }
+  .header {
+    margin-top: 20px;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .logoAC {
+    height: 180px;
+    width: 180px;
+  }
+  .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2.5em;
+  }
+
+  .name {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    font-size: 2.7em;
+  }
+  .subTitle {
+    font-size: 1.2em;
+    margin: 0px;
+  }
+  .ButtonProyects {
+    font-size: 20px;
+  }
+  .icon {
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .iconName {
+    font-size: 15px;
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+}
