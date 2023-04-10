@@ -6,7 +6,6 @@
   height: 43px;
   position: sticky;
   top: 0px;
-  overflow-x: hidden;
 }
 .containName {
   display: flex;
@@ -55,7 +54,6 @@
   cursor: pointer;
 }
 .buttonIco {
-  height: 100%;
   margin-right: 10px;
   border-style: none;
   background: none;

@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 import {Button} from "react-bootstrap";
 import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
-import {GrGithub} from "react-icons/gr";
+import {GrGithub, GrDocumentPdf, GrCertificate} from "react-icons/gr";
 import {FaLinkedin} from "react-icons/fa";
 import {BsFillEyeFill} from "react-icons/bs";
 import s3 from "../../assets/Amazon-S3.png";
@@ -61,7 +61,7 @@ const Home = () => {
                   mode: "push",
                 },
                 onHover: {
-                  enable: false,
+                  enable: true,
                   mode: "repulse",
                 },
                 resize: true,
@@ -103,7 +103,7 @@ const Home = () => {
               number: {
                 density: {
                   enable: true,
-                  area: 900,
+                  area: 1500,
                 },
                 value: 100,
               },
@@ -114,14 +114,19 @@ const Home = () => {
                 type: "circle",
               },
               size: {
-                value: {min: 1, max: 4},
+                value: {min: 1, max: 1},
               },
             },
             detectRetina: true,
           }}
         />
         <header className={styles.header}>
-          <img className={styles.logoAC} src={logoAC} alt='not found' />
+          <img
+            name='about'
+            className={styles.logoAC}
+            src={logoAC}
+            alt='not found'
+          />
           <div className={styles.headerContent}>
             <div>
               <h1 className={styles.title}>Hola, soy </h1>
@@ -132,18 +137,54 @@ const Home = () => {
         </header>
         <div className={styles.containAbout}>
           <p className={styles.about}>
-            Soy Full Stack JavaScript Developer, mi nombre es Alexander Cañete
-            tengo 19 años soy de Chaco Argentina, ingresé al mundo de la
-            programación hace Tres años. Soy un apasionado de la tecnología, amo
-            programar y siempre me destaqué bastante en ello. Me siento cómodo
-            trabajando en Front-end y en Back-end. Como profesional le doy gran
-            importancia al trabajo en equipo y tengo pasión por aprender nuevas
-            Tecnologías para aplicarlas en mis proyectos.
+            Soy Full Stack Developer Graduado y Certificado en Henry. Mi nombre
+            es Alexander Cañete, tengo 19 años y resido en Chaco, Argentina.
+            Ingresé en el mundo de la programación hace tres años. Me considero
+            un apasionado de la tecnología, amo programar y siempre me destaqué
+            en ello; mis areas de trabajo son Front-end y Back-end. Como
+            profesional le doy gran importancia al trabajo en equipo y tengo
+            pasión por aprender nuevas Tecnologías para aplicarlas en mis
+            proyectos.
           </p>{" "}
+        </div>
+        <div className={styles.containDocuments}>
+          <a
+            href='https://certificates.soyhenry.com/cert?id=692bd34a-167f-49e9-9800-5c3aa2a9f6a5'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Button className={styles.buttonLinght} variant='light'>
+              <GrCertificate /> Certificado
+            </Button>{" "}
+          </a>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            download='AC_En.pdf'
+            href='https://acrobat.adobe.com/id/urn:aaid:sc:VA7:078c97bb-745f-4603-b8c4-817105d04ae2'
+          >
+            <Button className={styles.buttonLinght} variant='light'>
+              <GrDocumentPdf /> CV-Ingles
+            </Button>
+          </a>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            download='AC_En.pdf'
+            href='https://acrobat.adobe.com/id/urn:aaid:sc:VA7:f0a2234a-3837-4506-8bf9-bafdc43dddda'
+          >
+            <Button className={styles.buttonLinght} variant='light'>
+              <GrDocumentPdf /> CV-Español
+            </Button>{" "}
+          </a>
         </div>
       </div>
       <div className={styles.body}>
-        <Button className={styles.ButtonProyects} variant='light'>
+        <Button
+          name='proyects'
+          className={styles.ButtonProyects}
+          variant='light'
+        >
           Mi trabajo
         </Button>{" "}
         <div className={styles.containProyect}>
@@ -166,9 +207,9 @@ const Home = () => {
           </div>
           <div className={styles.containProyectDetail}>
             <p className={styles.proyectDetail}>
-              E-Commerce enfocado a la presentacion y venta de productos
-              personalizado y administrado directamente por el cliente dueño de
-              la página Alojada en la Nube con Amazon Web Services
+              E-Commerce enfocado en la presentacion y venta de productos
+              personalizados, administrado directamente por el cliente dueño de
+              la página. Alojada en la Nube con Amazon Web Services
             </p>
           </div>
           <div className={styles.containButtons}>
@@ -187,7 +228,11 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <Button className={styles.ButtonProyects} variant='light'>
+        <Button
+          name='techSkills'
+          className={styles.ButtonProyects}
+          variant='light'
+        >
           Tecnologías
         </Button>{" "}
         <div className={styles.containProyect}>
@@ -262,7 +307,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Button className={styles.ButtonProyects} variant='light'>
+        <Button
+          name='contact'
+          className={styles.ButtonProyects}
+          variant='light'
+        >
           Contacto
         </Button>{" "}
         <div className={styles.containContact}>
@@ -284,10 +333,18 @@ const Home = () => {
                 +54 9 362 523-5556
               </span>{" "}
               <div className={styles.containIconsLinks}>
-                <a href='https://github.com/chaque1111'>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://github.com/chaque1111'
+                >
                   <GrGithub className={styles.iconLink} />
                 </a>
-                <a href='https://www.linkedin.com/in/alexander-ca%C3%B1ete-831480238/'>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.linkedin.com/in/alexander-ca%C3%B1ete-831480238/'
+                >
                   <FaLinkedin className={styles.iconLink} />
                 </a>
               </div>
