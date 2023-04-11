@@ -156,6 +156,16 @@ const Home = () => {
             <Button className={styles.buttonLinght} variant='light'>
               <GrCertificate /> Certificado
             </Button>{" "}
+          </a>{" "}
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            download='AC_En.pdf'
+            href='https://acrobat.adobe.com/id/urn:aaid:sc:VA7:00a2b969-e879-47b6-887c-b395c31997af'
+          >
+            <Button className={styles.buttonLinght} variant='light'>
+              <GrDocumentPdf /> CV-Español
+            </Button>{" "}
           </a>
           <a
             target='_blank'
@@ -166,16 +176,6 @@ const Home = () => {
             <Button className={styles.buttonLinght} variant='light'>
               <GrDocumentPdf /> CV-Ingles
             </Button>
-          </a>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            download='AC_En.pdf'
-            href='https://acrobat.adobe.com/id/urn:aaid:sc:VA7:f0a2234a-3837-4506-8bf9-bafdc43dddda'
-          >
-            <Button className={styles.buttonLinght} variant='light'>
-              <GrDocumentPdf /> CV-Español
-            </Button>{" "}
           </a>
         </div>
       </div>
