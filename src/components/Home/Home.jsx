@@ -103,18 +103,18 @@ const Home = () => {
               number: {
                 density: {
                   enable: true,
-                  area: 1500,
+                  area: 900,
                 },
                 value: 100,
               },
               opacity: {
-                value: 0.5,
+                value: 0.7,
               },
               shape: {
                 type: "circle",
               },
               size: {
-                value: {min: 1, max: 1},
+                value: {min: 0, max: 0},
               },
             },
             detectRetina: true,
