@@ -97,7 +97,7 @@ const Home = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 1,
+                speed: 0.7,
                 straight: false,
               },
               number: {
@@ -105,16 +105,16 @@ const Home = () => {
                   enable: true,
                   area: 900,
                 },
-                value: 100,
+                value: 60,
               },
               opacity: {
-                value: 0.7,
+                value: 0.0,
               },
               shape: {
                 type: "circle",
               },
               size: {
-                value: {min: 0, max: 0},
+                value: {min: 1, max: 2},
               },
             },
             detectRetina: true,
