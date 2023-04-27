@@ -8,6 +8,8 @@ import {loadFull} from "tsparticles";
 import {GrGithub, GrDocumentPdf, GrCertificate} from "react-icons/gr";
 import {FaLinkedin} from "react-icons/fa";
 import {BsFillEyeFill} from "react-icons/bs";
+
+import underLogo from "../../assets/underStock.svg";
 import s3 from "../../assets/Amazon-S3.png";
 import ec2 from "../../assets/AWS-ec2.png";
 import rds from "../../assets/awsS3.png";
@@ -26,6 +28,10 @@ import redux from "../../assets/redux.svg";
 import scrum from "../../assets/scrum.png";
 import sequelize from "../../assets/sequelize.svg";
 import codigoQR from "../../assets/QR.jpg";
+import mongoDB from "../../assets/mongodb.png";
+import ts from "../../assets/tslogo.png";
+import python from "../../assets/python.png";
+import nest from "../../assets/nest.svg.png";
 const Home = () => {
   const particlesInit = async (main) => {
     // console.log(main);
@@ -189,11 +195,60 @@ const Home = () => {
         </Button>{" "}
         <div className={styles.containProyect}>
           <div className={styles.containProyectName}>
+            <img className={styles.underLogo} src={underLogo} alt='' />
+            <h1 className={styles.nameProyect}>UNDER STOCK</h1>
+          </div>
+          <div className={styles.containTecnology}>
+            <h1 className={styles.tecnology}>Front-End</h1>
+            <h1 className={styles.tecnology}>React.js</h1>
+            <h1 className={styles.tecnology}>Redux-Toolkit</h1>
+            <h1 className={styles.tecnology}>CSS3</h1>
+            <h1 className={styles.tecnology}>Bootstrap</h1>
+            <h1 className={styles.tecnology}>TypeScript</h1>
+            <h1 className={styles.tecnology}>Javascript</h1>
+            <h1 className={styles.tecnology}>Responsive Web Desing</h1>{" "}
+            <h1 className={styles.tecnology}>AWS S3</h1>
+            <h1 className={styles.tecnology}>Back-End</h1>
+            <h1 className={styles.tecnology}>Express</h1>
+            <h1 className={styles.tecnology}>Node.js</h1>
+            <h1 className={styles.tecnology}>Sequelize Postgres</h1>
+            <h1 className={styles.tecnology}>AWS EC2</h1>
+            <h1 className={styles.tecnology}>AWS RDS</h1>
+          </div>
+          <div className={styles.containProyectDetail}>
+            <p className={styles.proyectDetail}>
+              Ésta página está inspirada en una tienda de ropa, es un proyecto
+              creado para mi portafolio y para poder mostrar mi trabajo, es una
+              página en la que se incluyen búsquedas asíncronas, filtrados y
+              creación de productos, los datos están almacenados en una base de
+              datos PostgreSql. La aplicación entera está deployada con AWS;
+              Base de datos, Servidor de back-end, y front-end
+            </p>
+          </div>
+          <div className={styles.containButtons}>
+            <button className={styles.Button}>
+              Repositorio <GrGithub />
+            </button>
+
+            <a
+              href='http://undertockfront.s3-website-us-east-1.amazonaws.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <button className={styles.Button}>
+                Ir al sitio <BsFillEyeFill />
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className={styles.containProyect}>
+          <div className={styles.containProyectName}>
             <h1 className={styles.nameProyect}>SUBLIMACIONES APP</h1>
           </div>
           <div className={styles.containTecnology}>
             <h1 className={styles.tecnology}>Front-End</h1>
             <h1 className={styles.tecnology}>React.js</h1>
+            <h1 className={styles.tecnology}>Javascript</h1>
             <h1 className={styles.tecnology}>Redux-Toolkit</h1>
             <h1 className={styles.tecnology}>CSS3</h1>{" "}
             <h1 className={styles.tecnology}>Responsive Web Desing</h1>{" "}
@@ -237,17 +292,30 @@ const Home = () => {
         </Button>{" "}
         <div className={styles.containProyect}>
           <div className={styles.containTecnology}>
+            {" "}
             <div className={styles.containIcon}>
-              <img src={rds} alt='not found' className={styles.icon} />
-              <h1 className={styles.iconName}>AWS RDS</h1>
-            </div>
+              <img src={nest} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>Nest.js</h1>
+            </div>{" "}
             <div className={styles.containIcon}>
-              <img src={ec2} alt='not found' className={styles.icon} />
-              <h1 className={styles.iconName}>AWS EC2</h1>
-            </div>
+              <img src={python} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>Python</h1>
+            </div>{" "}
             <div className={styles.containIcon}>
-              <img src={s3} alt='not found' className={styles.icon} />
-              <h1 className={styles.iconName}>AWS S3</h1>
+              <img src={ts} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>TypeScript</h1>
+            </div>{" "}
+            <div className={styles.containIcon}>
+              <img src={js} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>JavaScript</h1>
+            </div>{" "}
+            <div className={styles.containIcon}>
+              <img src={mongoDB} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>MongoDb</h1>
+            </div>{" "}
+            <div className={styles.containIcon}>
+              <img src={github} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>GitHub</h1>
             </div>
             <div className={styles.containIcon}>
               <img src={bootstrap} alt='not found' className={styles.icon} />
@@ -270,13 +338,17 @@ const Home = () => {
               <h1 className={styles.iconName}>Heroku</h1>
             </div>
             <div className={styles.containIcon}>
-              <img src={github} alt='not found' className={styles.icon} />
-              <h1 className={styles.iconName}>GitHub</h1>
+              <img src={rds} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>AWS RDS</h1>
             </div>
             <div className={styles.containIcon}>
-              <img src={js} alt='not found' className={styles.icon} />
-              <h1 className={styles.iconName}>JavaScript</h1>
-            </div>{" "}
+              <img src={ec2} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>AWS EC2</h1>
+            </div>
+            <div className={styles.containIcon}>
+              <img src={s3} alt='not found' className={styles.icon} />
+              <h1 className={styles.iconName}>AWS S3</h1>
+            </div>
             <div className={styles.containIcon}>
               <img src={node} alt='not found' className={styles.icon} />
               <h1 className={styles.iconName}>Node.js</h1>

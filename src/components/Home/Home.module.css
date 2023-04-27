@@ -113,6 +113,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .nameProyect {
@@ -251,8 +252,15 @@ a {
 .iconLink {
   font-size: 40px;
 }
+.underLogo {
+  height: 90px;
+  margin-right: 20px;
+}
 
 @media screen and (max-width: 1200px) {
+  .underLogo {
+    height: 80px;
+  }
   .logoAC {
     height: 200px;
     width: 200px;
@@ -345,6 +353,11 @@ a {
   }
 }
 @media screen and (max-width: 870px) {
+  .underLogo {
+    margin-top: 5px;
+    height: 60px;
+    margin-right: 5px;
+  }
   .particles {
     backdrop-filter: blur(0px);
     height: auto;
