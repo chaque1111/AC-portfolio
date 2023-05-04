@@ -398,6 +398,8 @@ a {
   .containTecnology {
     gap: 15px;
     padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .tecnology {
     font-size: 13px;
