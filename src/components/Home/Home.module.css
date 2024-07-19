@@ -214,7 +214,7 @@ a {
 }
 .containSpans {
   display: flex;
-  
+  justify-content: center;
 
   width: 40%;
   background: rgb(255, 255, 255);
