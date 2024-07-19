@@ -30,15 +30,7 @@ export default function NavBar() {
           >
             <li className={styles.Link}>Inicio</li>
           </Link>
-          <Link
-            to='proyects'
-            spy={true}
-            smooth={true}
-            offset={-150}
-            duration={200}
-          >
-            <li className={styles.Link}>Proyectos</li>
-          </Link>
+
           <Link
             to='techSkills'
             spy={true}

@@ -143,14 +143,7 @@ const Home = () => {
         </header>
         <div className={styles.containAbout}>
           <p className={styles.about}>
-            Soy Full Stack Developer Graduado y Certificado en Henry. Mi nombre
-            es Alexander Cañete, tengo 19 años y resido en Chaco, Argentina.
-            Ingresé en el mundo de la programación hace tres años. Me considero
-            un apasionado de la tecnología, amo programar y siempre me destaqué
-            en ello; mis areas de trabajo son Front-end y Back-end. Como
-            profesional le doy gran importancia al trabajo en equipo y tengo
-            pasión por aprender nuevas Tecnologías para aplicarlas en mis
-            proyectos.
+          Mi nombre es Alexander Jonatan Cañete tengo 20 años. Soy programador y desarrollador de pila completa con una pasión por enseñar y aprender nuevas tecnologías. Disfruto aplicar mis conocimientos en proyectos laborales y personales. Soy un amante y apasionado de la tecnología.
           </p>{" "}
         </div>
         <div className={styles.containDocuments}>
@@ -163,30 +156,11 @@ const Home = () => {
               <GrCertificate /> Certificado
             </Button>{" "}
           </a>{" "}
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            download='AC_En.pdf'
-            href='https://acrobat.adobe.com/id/urn:aaid:sc:VA7:00a2b969-e879-47b6-887c-b395c31997af'
-          >
-            <Button className={styles.buttonLinght} variant='light'>
-              <GrDocumentPdf /> CV-Español
-            </Button>{" "}
-          </a>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            download='AC_En.pdf'
-            href='https://acrobat.adobe.com/id/urn:aaid:sc:VA7:078c97bb-745f-4603-b8c4-817105d04ae2'
-          >
-            <Button className={styles.buttonLinght} variant='light'>
-              <GrDocumentPdf /> CV-Ingles
-            </Button>
-          </a>
+          
         </div>
       </div>
       <div className={styles.body}>
-        <Button
+        {/* <Button
           name='proyects'
           className={styles.ButtonProyects}
           variant='light'
@@ -282,7 +256,7 @@ const Home = () => {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
         <Button
           name='techSkills'
           className={styles.ButtonProyects}
@@ -388,9 +362,7 @@ const Home = () => {
         </Button>{" "}
         <div className={styles.containContact}>
           <div className={styles.containSpans}>
-            <div className={styles.containQr}>
-              <img className={styles.image} src={codigoQR} alt='not found' />
-            </div>
+
             <div className={styles.containLabels}>
               <span className={styles.spanContact}>
                 <label className={styles.labelContact}>Nombre completo:</label>
@@ -400,10 +372,7 @@ const Home = () => {
                 <label className={styles.labelContact}>Email:</label>
                 alexandercanete035@gmail.com
               </span>{" "}
-              <span className={styles.spanContact}>
-                <label className={styles.labelContact}>Teléfono:</label>
-                +54 9 362 523-5556
-              </span>{" "}
+           
               <div className={styles.containIconsLinks}>
                 <a
                   target='_blank'
